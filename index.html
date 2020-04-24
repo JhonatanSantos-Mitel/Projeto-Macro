@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Jhonatan Wazinsky">
+  <meta name="description" content="We choose the best concept to build the bests products, going towards a bright technological future - Macro.">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Spartan:300,700&display=swap" rel="stylesheet">
+
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <title>Macro | Hardware</title>
+</head>
+
+<body>
+  <div class="row no-gutters">
+    <div class="col-lg-1 menu border-right d-flex z-index-top">
+      <div class="align-self-center mx-auto">
+        <div id="open">
+          <a href="#" id="open-icon"><i class="icon ion-md-menu text-light display-4 mx-auto" onclick="showMenu()"></i></a>
+        </div>
+        <div id="close">
+          <a href="#" id="close-icon"><i class="icon ion-md-close text-light display-4 mx-auto" onclick="hideMenu()"></i></a>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="col-lg-11">
+
+      <section id="home" class="d-flex">
+        <div class="container align-self-center">
+          <div class="hero w-75">
+            <h1 class="display-4 text-light mb-4">Think different, make the<span class="font-weight-bold"> Difference</span></h1>
+            <p class="text-light text-uppercase mb-5">Be part of the Macro hardware initiative<p>
+            <a id="butn" href="#" class="btn btn-outline-light rounded-0 py-3 px-4 mb-5">Join us</a>
+            <ul class="list-inline">
+              <li class="list-inline-item mr-5"><a href="#" class="text-light"><i class="icon ion-logo-instagram lead mr-2"></i>Instagram</a></li>
+              <li class="list-inline-item mr-5"><a href="#" class="text-light"><i class="icon ion-logo-facebook lead mr-2"></i>Facebook</a></li>
+              <li class="list-inline-item mr-5"><a href="#" class="text-light"><i class="icon ion-logo-youtube lead mr-2"></i>Youtube</a></li>
+              <li class="list-inline-item mr-5"><a href="#" class="text-light"><i class="icon ion-logo-twitter lead mr-2"></i>Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-image-1 position-relative">
+        <div class="title text-light position-absolute">
+          <h1>Discover our brand new <span class="font-weight-bold">Macrobook G328</span></h1>
+          <p>-Developed with cutting edge technology with a focus on high performance</p>
+          <a href="#" class="font-weight-bold text-light">Buy now <i class="icon ion-md-arrow-forward lead align middle ml-2"></i></a>
+        </div>
+      </section>
+
+      <section class="bg-image-2 position-relative">
+        <div class="title text-light position-absolute">
+          <h1>Introducing our newest Software<span class="font-weight-bold"> Macro XS</span></h1>
+          <p>-Technology focused on game development</p>
+          <a href="#" class="font-weight-bold text-light">Learn more <i class="icon ion-md-arrow-forward lead align middle ml-2"></i></a>
+        </div>
+      </section>
+
+      <section class="bg-image-3 position-relative">
+        <div class="title text-light position-absolute">
+          <h1>Check out our new <span class="font-weight-bold">Macro Smartphone</span></h1>
+          <p>-Now with the newest SnapDragon 900x</p>
+          <a href="#" class="font-weight-bold text-light">Buy now <i class="icon ion-md-arrow-forward lead align middle ml-2"></i></a>
+        </div>
+      </section>
+      
+      <footer class="border-top py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <small class="text-muted">©2020 <a href="https://macrohardware.com" class="text-muted">MACRO</a></small>
+            </div>
+            <div class="col-lg-6 text-right">
+              <small><a href="#" class="text-muted">contact@macro.com</a></small>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <div id="menu-overlay" class="position-absolute d-flex bg-dark h-100 w-100">
+    <div id="menu-content" class="align-self-center text-center w-75 mx-auto">
+      <h1 class="display-3 text-light">Today's science is tomorrow's<span class="font-weight-bold"> technology</span></h1>
+      <a href="#" class="lead text-light">www.Macro.com</a>
+    </div>
+
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <script>
+    function showMenu() {
+      document.getElementById('content').style.overflowY="hidden";
+      document.getElementById('open-icon').style.opacity="0";
+      document.getElementById('menu-overlay').style.cssText = "opacity: 1; z-index: 1005;"
+      setTimeout(function(){
+        document.getElementById('open').style.display="none";
+        document.getElementById('close').style.display="block";
+        document.getElementById('menu-content').style.opacity="1";
+      }, 1000)
+      setTimeout(function(){
+        document.getElementById('close-icon').style.opacity="1";
+      }, 1100)
+    }
+
+    function hideMenu() {
+      document.getElementById('content').style.overflowY="auto";
+      document.getElementById('close-icon').style.opacity="0";
+      document.getElementById('menu-content').style.opacity = "0";
+        setTimeout(function(){
+          document.getElementById('close').style.opacity = "none";
+          document.getElementById('open').style.display = "block";
+          document.getElementById('menu-overlay').style.cssText = "opacity: 0; z-index: unset;";
+        }, 1000)
+        setTimeout(function(){
+          document.getElementById('open-icon').style.opacity="1";
+        }, 1100)
+    }
+  </script>
+
+</body> <!--Code Dev&Pub by © Wazinsky - 24/04/2020-->
+
+</html>
